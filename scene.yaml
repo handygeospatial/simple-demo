@@ -11,8 +11,8 @@ lights:
 
 sources:
     osm:
-        type: TopoJSONTiles
-        url:  //vector.mapzen.com/osm/all/{z}/{x}/{y}.topojson?api_key=vector-tiles-HqUVidw
+        type: MVT
+        url:  //vector.mapzen.com/osm/all/{z}/{x}/{y}.mvt?api_key=vector-tiles-yPt715o
 
 layers:
     earth:

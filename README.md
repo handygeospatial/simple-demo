@@ -1,4 +1,4 @@
-# simple-demo
+# simple-demo (handygeospatial's version)
 
 A demo showing the basic [Tangram](http://github.com/tangrams/tangram) demo setup.
 
@@ -17,3 +17,7 @@ If that doesn't work, try:
     python -m http.server 8000
     
 Then navigate to: [http://localhost:8000](http://localhost:8000)
+
+### difference from the original
+
+- really simple
