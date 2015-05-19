@@ -1,0 +1,40 @@
+cameras:
+    camera1:
+        type: isometric
+
+lights:
+    light1:
+        type: point
+        direction: [0, 0, -10800]
+        origin: camera
+        diffuse: 1.
+        ambient: .3
+        specular: .2
+
+sources:
+    gsi:
+        type: GeoJSONTiles
+        url:  //cyberjapandata.gsi.go.jp/xyz/experimental_fgd/{z}/{x}/{y}.geojson
+        max-zoom: 18
+
+layers:
+    blda:
+        data: {source: gsi}
+        filter:
+            class: BldA
+        draw:
+            polygons:
+                order: 2
+                color: '#ffe6be'
+        3d-buildings:
+            draw:
+                polygons:
+                    extrude: function() {return true;}
+              
+    xray:
+        data: {source: gsi}
+        draw:
+            lines:
+                order: 0
+                color: '#040'
+                width: .5
